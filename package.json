@@ -7,12 +7,15 @@
   "author": "Oleksiy Rudenko <oleksiy.rudenko@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "babel-node src",
+    "start": "babel-node src/server",
     "test": "eslint src && jest --coverage",
     "precommit": "yarn test",
     "prepush": "yarn test"
   },
-  "dependencies": {},
+  "dependencies": {
+    "compression": "^1.7.0",
+    "express": "^4.15.4"
+  },
   "browserslist": [
     "> 1%"
   ],

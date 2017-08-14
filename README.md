@@ -18,6 +18,8 @@ as of this project starting date.
    - [Inevitable Tools](#inevitable-tools)
    - [Project initialization](#project-initialization)
    - [Transpiling and Linting](#transpiling-and-linting)
+   - [Testing](#testing)
+   - [Running App in Browser](#running-app-in-browser)
 
 ## Workflow
 
@@ -59,6 +61,9 @@ and use this document as a quick reference.
 | Flow | `*`Strict typing       | strict typing helps avoiding silly mistakes |
 | Jest | `*`Automated tests     | promotes [TDD](https://en.wikipedia.org/wiki/Test-driven_development) |
 | Husky | `*`Tests in VCS workflow | prevents publishing bad code |
+| Express | Local web-server    | run your web-app |
+| Nodemon | Update app on the fly | change code and see the effect immediately |
+| PM2   | Process management    | keep services alive and in production state |
 
 `*` denotes optional tools. Please, refer to relevant sections
 for details.
@@ -353,5 +358,43 @@ Use `git push --no-verify`.
 3. Don't want tests upon committing or pushing.
 
 Remove `precommit` and `prepush` tasks from `package.json`.
+
+[🔝 back to contents](#contents)
+
+### Running App in Browser
+
+Setup web-server (`Express`), let app get updated
+on the fly (`Nodemon`), and build production-ready
+app (`PM2`).
+
+Create folders:
+ * `public/` - to place `*.css` and other files for direct access
+ * `src/client/` - front-end code
+ * `src/server/` - back-end code
+ * `src/shared/` - shared between front- and back-end (e.g. _routes_)
+
+Create `src/shared/config.js` for server config.
+
+Create `src/shared/util.js` for Node settings re web-server status.
+
+Create `src/server/index.js` as an entry point that will
+bootstrap the web-server and set it up.
+
+Create `src/server/render-app.js` that will build a front-end
+part of the app.
+
+In `package.json` change your start script like so: 
+`"start": "babel-node src/server",`
+
+#### Web-server
+
+Run `yarn add express compression` to install
+[Express](http://expressjs.com/).
+
+Run `yarn start` and browse to `http://localhost:8000`.
+
+You can stop web-server with **Ctrl-C**. Launch web-server
+from dedicated terminal window.
+
 
 [🔝 back to contents](#contents)

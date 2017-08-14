@@ -16,3 +16,6 @@ bower_components/
 
 # Application release folder
 dist/
+
+# Testing
+/coverage/

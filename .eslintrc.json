@@ -10,5 +10,8 @@
     "no-unexpected-multiline": 2,
     "linebreak-style": [2, "windows"],
     "compat/compat": 2
+  },
+  "env": {
+    "jest": true
   }
 }

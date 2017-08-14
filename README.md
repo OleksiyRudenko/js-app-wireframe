@@ -295,6 +295,21 @@ publishing bad code that doesn't pass tests.
 
 #### Automated tests
 
+Run `yarn add --dev jest babel-jest` to install
+[Jest](https://facebook.github.io/jest/).
+
+Add `"env": { "jest": true }` at the object root in `.eslintrc.json`.
+
+Chain `jest --coverage` to `"test"` script in `package.json`.
+
+Add `/coverage/` to `.gitignore`. This folder will contain data
+on codebase covered with tests.
+
+Create `*.test.js` for each `.js` you want to get tested.
+
+Run `yarn test` to see the results.
+Open `/coverage/lcov-report/index.html` with your browser
+to see the report.
 
 #### Publish healthy code only
 

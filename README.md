@@ -64,6 +64,9 @@ tool.
 `Checkout Windows-style, commit Uniex-style line endings`
 for the sake of compatibility.
 
+In this document `git` will also be referred to as the **VCS**
+(version control system).
+
 TODO: SSH vs HTTPS.
 
 [🔝 back to contents](#contents)
@@ -107,6 +110,9 @@ Create a project folder and `cd` into it.
 
 ### git
 
+In console/terminal run `git init` OR use IDE functionality to put
+the project under VCS.
+
 Add `.gitignore` file to your project or edit existing.
 Your project doesn't need any temporary or IDE-specific
 auxiliary files and folders pushed to repo. Check well commented
@@ -117,6 +123,9 @@ Check also
 
 ### yarn
 
+In console/terminal run `yarn init` and answer questions. `package.json` will be created.
+
+Add `package.json` to VCS.
 
 
 [🔝 back to contents](#contents)

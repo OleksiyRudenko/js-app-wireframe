@@ -112,6 +112,10 @@ instead of creating and initializing those.
 
 Create a project folder and `cd` into it.
 
+> 💡 In the end, when you fetch your repo to different
+machine `yarn install` will do all project development
+environment bootstrapping job automatically.
+
 #### git
 
 In console/terminal run `git init` OR use IDE functionality to put

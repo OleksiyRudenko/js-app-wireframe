@@ -295,7 +295,7 @@ that follow this section.
 Automate code testing tasks and get prevented from
 publishing bad code that doesn't pass tests.
 
-#### Automated tests
+#### Automated tests [optional]
 
 Run `yarn add --dev jest babel-jest` to install
 [Jest](https://facebook.github.io/jest/).
@@ -313,7 +313,42 @@ Run `yarn test` to see the results.
 Open `/coverage/lcov-report/index.html` with your browser
 to see the report.
 
-#### Publish healthy code only
+[🔝 back to contents](#contents)
 
+#### Publish healthy code only [optional]
+
+Run `yarn add --dev husky` to install
+[Husky](https://github.com/typicode/husky),
+a tool to add
+[Git Hooks](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks)
+that prevent committing and pushing code until it passes tests.
+
+Add following `precommit` and `prepush` scripts to `package.json`:
+```javascript
+"scripts": {
+  "start": "babel-node src",
+  "test": "eslint src && flow && jest --coverage",
+  "precommit": "yarn test",
+  "prepush": "yarn test"
+},
+```
+
+It will try run `test` task upon committing and pushing
+the code via VCS.
+
+##### Issues resolution
+
+1. Tests do not run upon commit or push.
+
+It may happen that Husky didn't install properly.
+Try `yarn add --dev husky --force`.
+
+2. You didn't change any code and running tests is senseless.
+
+Use `git push --no-verify`.
+
+3. Don't want tests upon committing or pushing.
+
+Remove `precommit` and `prepush` tasks from `package.json`.
 
 [🔝 back to contents](#contents)

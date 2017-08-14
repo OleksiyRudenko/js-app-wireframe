@@ -54,6 +54,16 @@ and use this document as a quick reference.
 | node | JS runtime             | a must |
 | npm  | Node package manager   | installed along with NodeJS |
 | yarn | Node package manager   | a must; better than npm |
+| Babel | ES6=>ES5 transpiler   | produce ES6-compatible code |
+| ESLint | Code style checker   | code style consistency |
+| Flow | `*`Strict typing       | strict typing helps avoiding silly mistakes |
+| Jest | `*`Automated tests     | promotes [TDD](https://en.wikipedia.org/wiki/Test-driven_development) |
+| Husky | `*`Tests in VCS workflow | prevents publishing bad code |
+
+`*` denotes optional tools. Please, refer to relevant sections
+for details.
+
+`**` denotes framework-specific tools and libraries.
 
 [🔝 back to contents](#contents)
 

@@ -108,7 +108,7 @@ Install for: [Windows](https://yarnpkg.com/en/docs/install#windows-tab) |
 
 Let's consider you start the project from the scratch. Should you want
 to work with some existing project consider changing tools-related files
-instead of creating and initiazlizing those.
+instead of creating and initializing those.
 
 Create a project folder and `cd` into it.
 

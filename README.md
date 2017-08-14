@@ -153,7 +153,10 @@ Add packages with:
 
 ### Transpiling and Linting
 
-Install some extra tools for your project.
+Install some extra tools for your project
+ * to benefit from improved ES6 syntax
+ * to benefit from consistent code style
+ * to benefit from _strict typing_ (optional)
 
 #### ES6 code transpilation
 

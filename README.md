@@ -210,8 +210,53 @@ try set up IDE so it uses the binary from your `node_modules` instead.
 
 [🔝 back to contents](#contents)
 
+#### Type checking [optional]
 
+JS employs _loose typing_ and _dynamic typing_.
+Use [Flow](https://flowtype.org/) to check types and code
+following strict typing.
 
+This will require type annotations in code, which makes code non-standard,
+and you need to teach other tools not to raise errors when parsing the
+code.
+
+Run `yarn add --dev flow-bin babel-preset-flow babel-eslint eslint-plugin-flowtype`
+to make Babel and linting Flow compatible.
+
+Add `"flow"` to `"presets"` array in `.babelrc`.
+
+Update `.eslintrc.json`:
+```javascript
+{
+  "extends": [
+    "airbnb",
+    "plugin:flowtype/recommended"
+  ],
+  "plugins": [
+    "flowtype",
+    "compat"
+  ],
+  "rules": {
+    "semi": [2, "never"],
+    "no-unexpected-multiline": 2,
+    "compat/compat": 2
+  }
+}
+```
+
+Chain flow to your test task in `package.json`: `"test": "eslint src && flow"`.
+
+Add `.flowconfig` file (refer to the one in this project).
+
+Add Flow annotations to source files - mark the file to be type-checked and
+add functions parameters typing.
+
+##### Type checking with IDE
+
+Consider configuring IDE so you have immediate feedback
+when Flow detects issues in the code.
+
+[🔝 back to contents](#contents)
 
 
 [🔝 back to contents](#contents)

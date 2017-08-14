@@ -8,5 +8,9 @@
   "license": "MIT",
   "scripts": {
     "start": "node ."
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.24.1"
   }
 }

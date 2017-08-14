@@ -278,5 +278,15 @@ In this project Flow is disabled. Check `*-flow` files for Flow settings.
 
 [🔝 back to contents](#contents)
 
+### Testing
+
+Automate code testing tasks and get prevented from
+publishing bad code that doesn't pass tests.
+
+#### Automated tests
+
+
+#### Publish healthy code only
+
 
 [🔝 back to contents](#contents)

@@ -13,6 +13,11 @@ as of this project starting date.
 
 ## Contents
 
+ * [Workflow](#workflow)
+ * [Dev Environment Tools](#dev-environment-tools)
+   - [Inevitable Tools](#inevitable-tools)
+   - [Transpiling and Linting](#transpiling-and-linting)
+ * [Project initialization](#project-initialization)
 
 ## Workflow
 
@@ -99,8 +104,19 @@ Install for: [Windows](https://yarnpkg.com/en/docs/install#windows-tab) |
 
 [🔝 back to contents](#contents)
 
+### Transpiling and Linting
 
-## Project initialization
+#### ES6 code transpilation
+
+Currently JS runtimes require code in ES5. Feel free coding in ES6
+and/or use 3rd party source code, which might also be ES6 specific
+by employing [Babel](https://babeljs.io/).
+
+Run `yarn add --dev babel-cli`
+
+[🔝 back to contents](#contents)
+
+## Project Initialization
 
 Let's consider you start the project from the scratch. Should you want
 to work with some existing project consider changing tools-related files
@@ -130,6 +146,11 @@ everything together.
 
 Add `package.json` to VCS.
 
+Add packages with:
+ * those you need your app to function with - `yarn add [package]`
+ * those required to build the app or during dev - `yarn add --dev [package]`
+
+> 💡 Use `yarn remove [package]` to get rid of unrequired package.
 
 [🔝 back to contents](#contents)
 

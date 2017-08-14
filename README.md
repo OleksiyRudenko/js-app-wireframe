@@ -125,6 +125,9 @@ Check also
 
 In console/terminal run `yarn init` and answer questions. `package.json` will be created.
 
+> 💡 Entry point is a script, which initializes your app and glues
+everything together.
+
 Add `package.json` to VCS.
 
 

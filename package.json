@@ -1,0 +1,9 @@
+{
+  "name": "js-app-wireframe",
+  "version": "1.0.0",
+  "description": "JS Application Development Environment Wireframe",
+  "main": "index.js",
+  "repository": "https://github.com/OleksiyRudenko/js-app-wireframe.git",
+  "author": "Oleksiy Rudenko <oleksiy.rudenko@gmail.com>",
+  "license": "MIT"
+}

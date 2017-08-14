@@ -368,7 +368,7 @@ on the fly (`Nodemon`), and build production-ready
 app (`PM2`).
 
 Create folders:
- * `public/` - to place `*.css` and other files for direct access
+ * `public/` - to place `*.css` and other static files for direct access at front-end
  * `src/client/` - front-end code
  * `src/server/` - back-end code
  * `src/shared/` - shared between front- and back-end (e.g. _routes_)

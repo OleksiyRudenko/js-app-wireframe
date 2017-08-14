@@ -50,20 +50,20 @@ and use this document as a quick reference.
 
 ## Dev Environment Tools
 
-| Tool | Purpose                | Comment                  |
-|------|------------------------|--------------------------|
-| git  | Version control system | a must   |
-| node | JS runtime             | a must |
+| Tool | Purpose                | Comment                     |
+|------|------------------------|-----------------------------|
+| git  | Version control system | a must                      |
+| node | JS runtime             | a must                      |
 | npm  | Node package manager   | installed along with NodeJS |
-| yarn | Node package manager   | a must; better than npm |
-| Babel | ES6=>ES5 transpiler   | produce ES6-compatible code |
-| ESLint | Code style checker   | code style consistency |
-| Flow | `*`Strict typing       | strict typing helps avoiding silly mistakes |
-| Jest | `*`Automated tests     | promotes [TDD](https://en.wikipedia.org/wiki/Test-driven_development) |
-| Husky | `*`Tests in VCS workflow | prevents publishing bad code |
-| Express | Local web-server    | run your web-app |
+| yarn | Node package manager   | a must; better than npm     |
+| Babel   | ES6=>ES5 transpiler   | produce ES6-compatible code |
+| ESLint  | Code style checker    | code style consistency      |
+| Flow    | `*`Strict typing      | strict typing helps avoiding silly mistakes |
+| Jest    | `*`Automated tests    | promotes [TDD](https://en.wikipedia.org/wiki/Test-driven_development) |
+| Husky   | `*`Tests in VCS workflow | prevents publishing bad code |
+| Express | Local web-server      | run your web-app |
 | Nodemon | Update app on the fly | change code and see the effect immediately |
-| PM2   | Process management    | keep services alive and in production state |
+| PM2     | Process management    | keep services alive and in production state |
 
 `*` denotes optional tools. Please, refer to relevant sections
 for details.

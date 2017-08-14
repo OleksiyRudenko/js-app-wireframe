@@ -106,6 +106,8 @@ Install for: [Windows](https://yarnpkg.com/en/docs/install#windows-tab) |
 
 ### Transpiling and Linting
 
+Install some extra tools for your project.
+
 #### ES6 code transpilation
 
 Currently JS runtimes require code in ES5. Feel free coding in ES6
@@ -116,6 +118,54 @@ Run `yarn add --dev babel-cli` to install Babel CLI.
 
 Run `yarn add --dev babel-preset-env` to install Babel preset package
 with configurations for the most recent ECMAScript features support.
+
+[🔝 back to contents](#contents)
+
+#### Linting tool
+
+[ESLint](http://eslint.org/) produces recommendations about ES6 code
+formatting, which enforces style consistency in your code.
+
+Install recommended config package following
+[instructions from Airbnb](https://www.npmjs.com/package/eslint-config-airbnb)
+using `yarn` instead of `npm`.
+
+> 💡 You may need
+[install-peerdeps](https://github.com/nathanhleung/install-peerdeps) under Windows.
+
+As of _project-start-date_ under Windows you run:
+`yarn global add install-peerdeps`
+`install-peerdeps --dev eslint-config-airbnb`
+
+Add `.eslintrc.json` for ESLint configuration. Refer to the one in
+this project for details.
+
+Run `yarn add --dev eslint`
+
+Update `package.json` with a new task:
+```javascript
+"scripts": {
+  "start": "babel-node src",
+  "test": "eslint src"
+},
+```
+
+Run `yarn test` to see if Linting passes OK. Fix any styling errors.
+
+##### JS API compatibility checks
+
+Run `yarn add --dev eslint-plugin-compat` to install browser compatibility
+checking tool.
+
+Add `"browserlist": ["> 1%"],` to `package.json` to check against browsers
+that have more than 1% market share.
+
+Add `"plugins": ["compat"],` to `.eslint.json`.
+
+##### Linting with IDE
+
+Do not use IDE native ES6 linting. To enjoy your custom linting config
+try set up IDE so it uses the binary from your `node_modules` instead.
 
 [🔝 back to contents](#contents)
 
@@ -161,5 +211,12 @@ Add packages with:
 
 Add `.babelrc` for Babel configuration. Refer to the one in this project
 for details.
+
+[🔝 back to contents](#contents)
+
+### ESLint
+
+
+
 
 [🔝 back to contents](#contents)

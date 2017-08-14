@@ -284,7 +284,9 @@ It may happen that Flow detects errors that may not want to fix. E.g.
 those coming from 3rd party code from `node_modules`.
 
 Remove Flow-related settings from `.babelrc`, `.eslintrc.json` and `package.json`.
-In this project Flow is disabled. Check `*-flow` files for Flow settings.
+In this project Flow is disabled. Check `*-flow*` files for Flow settings.
+Please, note that `*-flow*` files do not contain any changes
+that follow this section.
 
 [🔝 back to contents](#contents)
 

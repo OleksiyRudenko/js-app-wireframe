@@ -16,8 +16,8 @@ as of this project starting date.
  * [Workflow](#workflow)
  * [Dev Environment Tools](#dev-environment-tools)
    - [Inevitable Tools](#inevitable-tools)
+   - [Project initialization](#project-initialization)
    - [Transpiling and Linting](#transpiling-and-linting)
- * [Project initialization](#project-initialization)
 
 ## Workflow
 
@@ -104,6 +104,44 @@ Install for: [Windows](https://yarnpkg.com/en/docs/install#windows-tab) |
 
 [🔝 back to contents](#contents)
 
+### Project Initialization
+
+Let's consider you start the project from the scratch. Should you want
+to work with some existing project consider changing tools-related files
+instead of creating and initiazlizing those.
+
+Create a project folder and `cd` into it.
+
+#### git
+
+In console/terminal run `git init` OR use IDE functionality to put
+the project under VCS.
+
+Add `.gitignore` file to your project or edit existing.
+Your project doesn't need any temporary or IDE-specific
+auxiliary files and folders pushed to repo. Check well commented
+`.gitignore` from this project.
+
+Check also
+[a collection of `.gitignore` templates](https://github.com/github/gitignore).
+
+#### yarn
+
+In console/terminal run `yarn init` and answer questions. `package.json` will be created.
+
+> 💡 Entry point is a script, which initializes your app and glues
+everything together.
+
+Add `package.json` to VCS.
+
+Add packages with:
+ * those you need your app to function with - `yarn add [package]`
+ * those required to build the app or during dev - `yarn add --dev [package]`
+
+> 💡 Use `yarn remove [package]` to get rid of unrequired package.
+
+[🔝 back to contents](#contents)
+
 ### Transpiling and Linting
 
 Install some extra tools for your project.
@@ -118,6 +156,9 @@ Run `yarn add --dev babel-cli` to install Babel CLI.
 
 Run `yarn add --dev babel-preset-env` to install Babel preset package
 with configurations for the most recent ECMAScript features support.
+
+Add `.babelrc` for Babel configuration. Refer to the one in this project
+for details.
 
 [🔝 back to contents](#contents)
 
@@ -169,52 +210,6 @@ try set up IDE so it uses the binary from your `node_modules` instead.
 
 [🔝 back to contents](#contents)
 
-## Project Initialization
-
-Let's consider you start the project from the scratch. Should you want
-to work with some existing project consider changing tools-related files
-instead of creating and initiazlizing those.
-
-Create a project folder and `cd` into it.
-
-### git
-
-In console/terminal run `git init` OR use IDE functionality to put
-the project under VCS.
-
-Add `.gitignore` file to your project or edit existing.
-Your project doesn't need any temporary or IDE-specific
-auxiliary files and folders pushed to repo. Check well commented
-`.gitignore` from this project.
-
-Check also
-[a collection of `.gitignore` templates](https://github.com/github/gitignore).
-
-### yarn
-
-In console/terminal run `yarn init` and answer questions. `package.json` will be created.
-
-> 💡 Entry point is a script, which initializes your app and glues
-everything together.
-
-Add `package.json` to VCS.
-
-Add packages with:
- * those you need your app to function with - `yarn add [package]`
- * those required to build the app or during dev - `yarn add --dev [package]`
-
-> 💡 Use `yarn remove [package]` to get rid of unrequired package.
-
-[🔝 back to contents](#contents)
-
-### Babel
-
-Add `.babelrc` for Babel configuration. Refer to the one in this project
-for details.
-
-[🔝 back to contents](#contents)
-
-### ESLint
 
 
 

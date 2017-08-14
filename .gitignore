@@ -1,0 +1,5 @@
+# special git semaphore - to keep empty directories controlled
+!.gitkeep
+
+# IDE & FileSystem folders & files to ignore
+.idea

@@ -99,9 +99,15 @@ Install for: [Windows](https://yarnpkg.com/en/docs/install#windows-tab) |
 
 ## Project initialization
 
+Let's consider you start the project from the scratch. Should you want
+to work with some existing project consider changing tools-related files
+instead of creating and initiazlizing those.
+
+Create a project folder and `cd` into it.
+
 ### git
 
-Add `.gitignore` file to your project.
+Add `.gitignore` file to your project or edit existing.
 Your project doesn't need any temporary or IDE-specific
 auxiliary files and folders pushed to repo. Check well commented
 `.gitignore` from this project.

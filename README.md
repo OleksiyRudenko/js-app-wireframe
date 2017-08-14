@@ -263,7 +263,6 @@ those coming from 3rd party code from `node_modules`.
 
 Remove Flow-related settings from `.babelrc` and `.eslintrc.json`.
 
-
 [🔝 back to contents](#contents)
 
 

@@ -1,5 +1,11 @@
 # special git semaphore - to keep empty directories controlled
 !.gitkeep
 
-# IDE & FileSystem folders & files to ignore
+# IDE folders & files to ignore. Add your IDE files & folders to ignore below.
 .idea
+
+# Filesystem folders & files to ignore. Adding .DS_Store is a care about MAC users
+.DS_Store
+
+# Package management and build tools' log files. Project doesn't need those stored.
+/*.log

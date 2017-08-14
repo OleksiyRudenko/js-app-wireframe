@@ -343,6 +343,9 @@ the code via VCS.
 It may happen that Husky didn't install properly.
 Try `yarn add --dev husky --force`.
 
+It may also happen your IDE doesn't run Git hooks. Check IDE
+settings.
+
 2. You didn't change any code and running tests is senseless.
 
 Use `git push --no-verify`.

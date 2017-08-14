@@ -112,7 +112,10 @@ Currently JS runtimes require code in ES5. Feel free coding in ES6
 and/or use 3rd party source code, which might also be ES6 specific
 by employing [Babel](https://babeljs.io/).
 
-Run `yarn add --dev babel-cli`
+Run `yarn add --dev babel-cli` to install Babel CLI.
+
+Run `yarn add --dev babel-preset-env` to install Babel preset package
+with configurations for the most recent ECMAScript features support.
 
 [🔝 back to contents](#contents)
 
@@ -154,6 +157,9 @@ Add packages with:
 
 [🔝 back to contents](#contents)
 
+### Babel
 
+Add `.babelrc` for Babel configuration. Refer to the one in this project
+for details.
 
 [🔝 back to contents](#contents)

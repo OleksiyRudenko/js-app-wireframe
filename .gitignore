@@ -7,5 +7,13 @@
 # Filesystem folders & files to ignore. Adding .DS_Store is a care about MAC users
 .DS_Store
 
-# Package management and build tools' log files. Project doesn't need those stored.
+# Package management and build tools' specific files. Project doesn't need those stored in repo.
 /*.log
+node_modules/
+bower_components/
+.sass-cache/
+.tmp/
+yarn.lock
+
+# Application release folder
+dist/

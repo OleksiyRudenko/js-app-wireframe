@@ -59,11 +59,6 @@ and use this document as a quick reference.
 Learn [git](https://git-scm.com/). It is simple yet powerful
 tool.
 
-You will also want to add `.gitignore` file to your project.
-You won't want to see any temporary or IDE-specific auxiliary
-files and folders in your project. Check commented
-`.gitignore` from this project.
-
 > 💡 Under Windows make sure to choose setup options
 `Use Git from from the Windows Command Prompt` and
 `Checkout Windows-style, commit Uniex-style line endings`
@@ -100,6 +95,23 @@ Install for: [Windows](https://yarnpkg.com/en/docs/install#windows-tab) |
 [🔝 back to contents](#contents)
 
 
+## Project initialization
+
+### git
+
+Add `.gitignore` file to your project.
+Your project doesn't need any temporary or IDE-specific
+auxiliary files and folders pushed to repo. Check well commented
+`.gitignore` from this project.
+
+Check also
+[a collection of `.gitignore` templates](https://github.com/github/gitignore).
+
+### yarn
+
+
+
+[🔝 back to contents](#contents)
 
 
 

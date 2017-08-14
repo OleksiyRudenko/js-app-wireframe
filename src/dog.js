@@ -1,9 +1,9 @@
-// @flow
+// @\flow disabled
 
 class Dog {
-  name: string
+  // name: string // Flow type-checking disabled
 
-  constructor(name: string) {
+  constructor(name) { // constructor(name: string) { // Flow type-checking disabled
     this.name = name
   }
   bark() {

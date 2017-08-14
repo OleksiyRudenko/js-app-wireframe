@@ -261,7 +261,8 @@ when Flow detects issues in the code.
 It may happen that Flow detects errors that may not want to fix. E.g.
 those coming from 3rd party code from `node_modules`.
 
-Remove Flow-related settings from `.babelrc` and `.eslintrc.json`.
+Remove Flow-related settings from `.babelrc`, `.eslintrc.json` and `package.json`.
+In this project Flow is disabled. Check `*-flow` files for Flow settings.
 
 [🔝 back to contents](#contents)
 

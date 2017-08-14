@@ -256,6 +256,14 @@ add functions parameters typing.
 Consider configuring IDE so you have immediate feedback
 when Flow detects issues in the code.
 
+##### Errors you won't fix
+
+It may happen that Flow detects errors that may not want to fix. E.g.
+those coming from 3rd party code from `node_modules`.
+
+Remove Flow-related settings from `.babelrc` and `.eslintrc.json`.
+
+
 [🔝 back to contents](#contents)
 
 

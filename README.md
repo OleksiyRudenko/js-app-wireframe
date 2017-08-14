@@ -59,6 +59,11 @@ and use this document as a quick reference.
 
 ### Inevitable Tools
 
+VCS (`git`), JS runtime (`NodeJS`), and 
+package management tool (`yarn`) are globally
+installed essential tools to develop applications
+in JS Stack.
+
 #### git
 
 Learn [git](https://git-scm.com/). It is simple yet powerful

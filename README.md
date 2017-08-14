@@ -92,6 +92,8 @@ Install for: [Windows](https://yarnpkg.com/en/docs/install#windows-tab) |
 (recommended approach to
 [avoid relying on other package managers](https://github.com/yarnpkg/yarn/issues/1505)).
 
+> 💡 You may need restarting Windows in order to changes to system environment take effect.
+
 [🔝 back to contents](#contents)
 
 

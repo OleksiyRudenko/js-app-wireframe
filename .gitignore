@@ -13,7 +13,6 @@ node_modules/
 bower_components/
 .sass-cache/
 .tmp/
-yarn.lock
 
 # Application release folder
 dist/

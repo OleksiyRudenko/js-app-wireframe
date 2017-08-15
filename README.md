@@ -413,3 +413,41 @@ some changes in code output and reload the page to
 see changes take effect.
 
 [🔝 back to contents](#contents)
+
+#### Production-ready app code
+
+Run `yarn add --dev pm2` to install
+[PM2](http://pm2.keymetrics.io/) to have ES6=>ES5
+transpiled code for production (will be placed in `lib/`).
+
+Run `yarn add --dev rimraf` to automate `lib/` clean-up.
+
+Run `yarn add --dev cross-env` to enable environment
+variable passing to a tool (`PM2`) in UNIX-style 
+under Windows.
+
+Add `"prod:build": "rimraf lib && babel src -d lib --ignore .test.js",`
+to `scripts` in ` package.json`.
+
+Add `/lib/` to your `.gitignore`.
+
+To launch build at production stage 
+add to `script` in `package.json`:
+```javascript
+"prod:start": "cross-env NODE_ENV=production pm2 start lib/server && pm2 logs",
+"prod:stop": "pm2 delete server",
+```
+
+Now **Ctrl-C** will terminate not web-browser but `prod:start`
+script. Run `yarn prod:stop` to stop the web-server.
+
+Modify `prepush` hook: `"prepush": "yarn test && yarn prod:build"`
+so build is checked before pushing to remote repo.
+
+The workflow:
+* `yarn prod:build`
+* `yarn prod:start`
+* **Ctrl-C** to terminate previous
+* `yarn prod:stop` to stop the web-server
+
+[🔝 back to contents](#contents)

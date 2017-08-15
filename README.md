@@ -124,6 +124,9 @@ Install for: [Windows](https://yarnpkg.com/en/docs/install#windows-tab) |
 
 > 💡 You may need restarting Windows in order to changes to system environment take effect.
 
+> ⚛️You may also add packages from github.com as well as
+from local sources with [`yarn add`](https://yarnpkg.com/lang/en/docs/cli/add/).
+
 [🔝 back to contents](#contents)
 
 ### Project Initialization

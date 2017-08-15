@@ -450,4 +450,7 @@ The workflow:
 * **Ctrl-C** to terminate previous
 * `yarn prod:stop` to stop the web-server
 
+NB! In prod mode changes do not take any effect on the fly!
+At this stage at dev mode they do!
+
 [🔝 back to contents](#contents)

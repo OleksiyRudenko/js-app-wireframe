@@ -19,7 +19,7 @@ as of this project starting date.
    - [Project initialization](#project-initialization)
    - [Transpiling and Linting](#transpiling-and-linting)
    - [Testing](#testing)
-   - [Running App in Browser](#running-app-in-browser)
+   - [Building Web App](#building-web-app)
 
 ## Workflow
 
@@ -64,6 +64,8 @@ and use this document as a quick reference.
 | Express | Local web-server      | run your web-app |
 | Nodemon | Auorestart web-server | change code and just reload the page |
 | PM2     | Process management    | keep services alive and in production state |
+| Webpack | Module bundler        | lessen number of files to load in producton |
+| React   | `**`JSX               | mix HTML and Javascript |
 
 `*` denotes optional tools. Please, refer to relevant sections
 for details.
@@ -361,11 +363,20 @@ Remove `precommit` and `prepush` tasks from `package.json`.
 
 [🔝 back to contents](#contents)
 
-### Running App in Browser
+### Building Web App
 
 Setup web-server (`Express`), let app get updated
 without restarting the server (`Nodemon`),
 and build production-ready app (`PM2`).
+
+Employ module bundler (`Webpack`),
+benefit from JSX (`React`), 
+and enable Hot Module Replacement (`HMR Webpack`).
+
+While JSX support is optional, in this example HMR
+is specifically tuned to support React. Consider
+changinr HMR options as appropriate when you do not 
+want to support JSX.
 
 Create folders:
  * `public/` - to place `*.css` and other static files for direct access at front-end
@@ -449,5 +460,15 @@ The workflow:
 * `yarn prod:start`
 * **Ctrl-C** to terminate previous
 * `yarn prod:stop` to stop the web-server
+
+[🔝 back to contents](#contents)
+
+#### Module Bundling
+
+
+#### JSX support
+
+
+#### Hot Module Replacement
 
 [🔝 back to contents](#contents)

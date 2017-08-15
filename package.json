@@ -7,7 +7,8 @@
   "author": "Oleksiy Rudenko <oleksiy.rudenko@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "babel-node src/server",
+    "start": "yarn dev:start",
+    "dev:start": "nodemon --ignore lib --exec babel-node src/server",
     "test": "eslint src && jest --coverage",
     "precommit": "yarn test",
     "prepush": "yarn test"
@@ -34,6 +35,7 @@
     "eslint-plugin-react": "7.1.0",
     "flow-bin": "^0.52.0",
     "husky": "^0.14.3",
-    "jest": "^20.0.4"
+    "jest": "^20.0.4",
+    "nodemon": "^1.11.0"
   }
 }

@@ -62,7 +62,7 @@ and use this document as a quick reference.
 | Jest    | `*`Automated tests    | promotes [TDD](https://en.wikipedia.org/wiki/Test-driven_development) |
 | Husky   | `*`Tests in VCS workflow | prevents publishing bad code |
 | Express | Local web-server      | run your web-app |
-| Nodemon | Update app on the fly | change code and see the effect immediately |
+| Nodemon | Auorestart web-server | change code and just reload the page |
 | PM2     | Process management    | keep services alive and in production state |
 
 `*` denotes optional tools. Please, refer to relevant sections
@@ -364,8 +364,8 @@ Remove `precommit` and `prepush` tasks from `package.json`.
 ### Running App in Browser
 
 Setup web-server (`Express`), let app get updated
-on the fly (`Nodemon`), and build production-ready
-app (`PM2`).
+without restarting the server (`Nodemon`),
+and build production-ready app (`PM2`).
 
 Create folders:
  * `public/` - to place `*.css` and other static files for direct access at front-end
@@ -396,5 +396,20 @@ Run `yarn start` and browse to `http://localhost:8000`.
 You can stop web-server with **Ctrl-C**. Launch web-server
 from dedicated terminal window.
 
+#### Monitoring the changes
+
+Run `yarn add --dev nodemon` to install
+[Nodemon](https://nodemon.io/) to get code
+used by web-server updated.
+
+Change the `scripts` in `package.json`:
+```javascript
+"start": "yarn dev:start",
+"dev:start": "nodemon --ignore lib --exec babel-node src/server",
+```
+
+Run `yarn start`, browse to `http://localhost:8000`, make
+some changes in code output and reload the page to
+see changes take effect.
 
 [🔝 back to contents](#contents)

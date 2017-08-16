@@ -20,11 +20,12 @@ as of this project starting date.
    - [Transpiling and Linting](#transpiling-and-linting)
    - [Testing](#testing)
    - [Running App in Browser](#running-app-in-browser)
+   - [Code Bundling](#code-bundling)
 
 ## Workflow
 
 `Code` => `Lint` => `Import packages`
-=> `Transpile` => `Test` => `Build` => `Publish`
+=> `Transpile` => `Test` => `Build` => `Prepare app for publication` => `Publish`
 
 Coding is that what you want to do. Other stages should and
 can be automated as much as only possible. There are essential
@@ -452,5 +453,21 @@ The workflow:
 
 NB! In prod mode changes do not take any effect on the fly!
 At this stage at dev mode they do!
+
+[🔝 back to contents](#contents)
+
+### Code Bundling
+
+Code styling requires that developer for e.g. keeps classes in individual file.
+This improves not only development process but also code debugging and collaboration.
+However, it is better having your app code bundled in production for the
+sake of performance.
+
+That's where code bundling tools come handy.
+
+#### Module Bundler
+
+
+
 
 [🔝 back to contents](#contents)

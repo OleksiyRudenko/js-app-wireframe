@@ -480,6 +480,13 @@ That's where code bundling tools come handy.
 
 #### Module Bundling
 
+A bit stuck here as I wish to describe `webpack`
+ * just copy static assets like images and `.css`
+   to proper location under `/dist`
+ * having `.html` as they are rather then
+   generated from JS template and built by `webpack`
+ * having `.html` parsed to update path to assets and
+   include proper external and built-in `.js` scripts
 
 #### JSX support
 

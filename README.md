@@ -218,7 +218,7 @@ this project for details.
 Run `yarn add --dev eslint`
 
 Update `package.json` with a new task:
-```javascript
+```json
 "scripts": {
   "start": "babel-node src",
   "test": "eslint src"
@@ -260,7 +260,7 @@ to make Babel and linting Flow compatible.
 Add `"flow"` to `"presets"` array in `.babelrc`.
 
 Update `.eslintrc.json`:
-```javascript
+```json
 {
   "extends": [
     "airbnb",
@@ -336,7 +336,7 @@ a tool to add
 that prevent committing and pushing code until it passes tests.
 
 Add following `precommit` and `prepush` scripts to `package.json`:
-```javascript
+```json
 "scripts": {
   "start": "babel-node src",
   "test": "eslint src && flow && jest --coverage",
@@ -419,7 +419,7 @@ Run `yarn add --dev nodemon` to install
 used by web-server updated.
 
 Change the `scripts` in `package.json`:
-```javascript
+```json
 "start": "yarn dev:start",
 "dev:start": "nodemon --ignore lib --exec babel-node src/server",
 ```
@@ -449,7 +449,7 @@ Add `/lib/` to your `.gitignore`.
 
 To launch build at production stage 
 add to `script` in `package.json`:
-```javascript
+```json
 "prod:start": "cross-env NODE_ENV=production pm2 start lib/server && pm2 logs",
 "prod:stop": "pm2 delete server",
 ```

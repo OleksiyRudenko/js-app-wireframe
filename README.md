@@ -495,6 +495,7 @@ Sources to study:
  * [Angular 1.X component based application with webpack and ES6](https://medium.com/@zamarrowski/angular-1-x-component-based-application-with-webpack-and-es6-dfab450f2df4) [160813]
  * [A Beginner’s Guide to Webpack 2 and Module Bundling](https://www.sitepoint.com/beginners-guide-to-webpack-2-and-module-bundling/) [170139]
  * [webpack-howto @github](https://github.com/petehunt/webpack-howto) [160412]
+ * [Use a HTML file as an entry point? @github/issues](https://github.com/webpack/webpack/issues/536) [141014]
  * [How to: Modernized AngularJS 1.5+ with ES6, Webpack, Mocha, SASS, and Components](https://www.codementor.io/narthur157/how-to-modernized-angularjs-1-5-with-es6-webpack-mocha-sass-and-components-7yp0apprt) [170517]
  * [Creating an application with AngularJS 1.4, ECMAScript 6, Material Design and Webpack](https://julienrenaux.fr/2015/05/05/creating-an-application-with-angularjs-1-4-ecmascript-6-material-design-and-webpack/) [150505]
 
